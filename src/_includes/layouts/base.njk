@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="canonical" href="{{ page.url | abs_url }}" />
+    <meta generator="{{ eleventy.generator }}" />
+    <title>{{ title }}</title>
+    {% block head %}
+    {% endblock %}
+    <!-- {{ page.inputPath }} -->
+  </head>
+  <body data-template="{{ name }}">
+    {% include "_header.njk"  %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+    <pre data-debug>{{ page | inspect | safe }}</pre>
+  </body>
+</html>

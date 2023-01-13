@@ -1,0 +1,18 @@
+---
+title: HOME
+name: index
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block footer %}
+  <script defer src="/assets/index.min.js"></script>
+{% endblock %}
+
+{% block content %}
+  <main>
+    <h1>{{ title }}</h1>
+    <p>This is my website. There are many like it, but this one is mine.</p>
+    <p>My website is my best friend. It is my life. I must master it as I must master my life.</p>
+  </main>
+{% endblock %}

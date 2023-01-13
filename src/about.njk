@@ -1,0 +1,15 @@
+---
+title: ABOUT
+name: about
+---
+
+{% extends "layouts/about.njk" %}
+
+{% block footer %}
+  <script defer src="/assets/about.min.js"></script>
+{% endblock %}
+
+{% block content %}
+  <h1>{{ title }}</h1>
+  <p>This is some about page content.</p>
+{% endblock %}
